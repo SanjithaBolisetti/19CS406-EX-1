@@ -1,8 +1,10 @@
 STUDY OF SOCKET PROGRAMMING WITH CLIENT-SERVER MODEL
 EXP: 1
 DATE :08-03-2023
+
 AIM :
 To write a python program to perform stop and wait protocol
+
 ALGORITHM :
 1. Start the program.
 2. Get the frame size from the user
@@ -10,6 +12,7 @@ ALGORITHM :
 4. To send frames to server from the client side.
 5. If your frames reach the server it will send ACK signal to client otherwise it will sendNACK signal to client.
 6. Stop the program
+
 CLIENT PROGRAM :
 import socket
 s=socket.socket()
@@ -26,6 +29,7 @@ while True:
 	else:
 		c.close()
 		break
+
 SERVER PROGRAM :
 import socket
 s=socket.socket()
@@ -33,12 +37,13 @@ s.connect(('localhost',8080))
 while True:
 	print(s.recv(1024).decode())
 	s.send("Recieved".encode())
+
 CLIENT OUTPUT :
-241374228-776252bb-9f63-4361-b551-55aa746effd5
+![image](https://github.com/SanjithaBolisetti/19CS406-EX-1/assets/119393633/f4814005-f021-448f-9daa-889225cae8f5)
+
 
 SERVER OUTPUT :
-241374231-6ff91ac9-c4d2-44f3-9ce9-c2195c6dab42
+![image](https://github.com/SanjithaBolisetti/19CS406-EX-1/assets/119393633/ae4fbd4c-812e-49cb-bd0c-b87d6a096fd9)
 
 RESULT:
 Thus, python program to perform stop and wait protocol was successfully executed.
-
