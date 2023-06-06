@@ -29,9 +29,9 @@ while True:
 	else:
 		c.close()
 		break
-
+```
 SERVER PROGRAM :
-import socket
+```import socket
 s=socket.socket()
 s.connect(('localhost',8080))
 while True:
