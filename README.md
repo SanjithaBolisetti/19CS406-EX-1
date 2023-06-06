@@ -14,7 +14,7 @@ ALGORITHM :
 6. Stop the program
 
 CLIENT PROGRAM :
-import socket
+```import socket
 s=socket.socket()
 s.bind(('localhost',8080))
 s.listen(5)
@@ -37,7 +37,7 @@ s.connect(('localhost',8080))
 while True:
 	print(s.recv(1024).decode())
 	s.send("Recieved".encode())
-
+```
 CLIENT OUTPUT :
 ![image](https://github.com/SanjithaBolisetti/19CS406-EX-1/assets/119393633/f4814005-f021-448f-9daa-889225cae8f5)
 
